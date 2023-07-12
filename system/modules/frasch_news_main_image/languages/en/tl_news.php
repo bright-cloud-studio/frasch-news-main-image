@@ -11,7 +11,7 @@
 **/
 
 /* Legends */
-$GLOBALS['TL_LANG']['tl_news']['reader_main_iamge_legend'] = 'Reader Main Image';
+$GLOBALS['TL_LANG']['tl_news']['reader_main_image_legend'] = 'Reader Main Image';
 
 /* Fields */
 $GLOBALS['TL_LANG']['tl_news']['reader_main_image']          = array('Reader Main Image', 'Select the image to be used at the main image in the Reader module');
