@@ -14,7 +14,7 @@
 $GLOBALS['TL_DCA']['tl_news']['palettes']['default'] = str_replace(';{image_legend}', ';{reader_main_image_legend},addImageMainImage;{image_legend}', $GLOBALS['TL_DCA']['tl_news']['palettes']['default']);
 
 $GLOBALS['TL_DCA']['tl_news']['palettes']['__selector__'] = array('source', 'addImageMainImage', 'addImage', 'addEnclosure', 'overwriteMeta');
-$GLOBALS['TL_DCA']['tl_news']['subpalettes']['addImageMainImage'] = 'singleSRCMainImage,fullsizeMainImage,sizeMainImage';
+$GLOBALS['TL_DCA']['tl_news']['subpalettes']['addImageMainImage'] = 'singleSRCMainImage,sizeMainImage';
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['addImageMainImage'] = array
 (
@@ -31,14 +31,6 @@ $GLOBALS['TL_DCA']['tl_news']['fields']['singleSRCMainImage'] = array
     'inputType'               => 'fileTree',
     'eval'                    => array('fieldType'=>'radio', 'filesOnly'=>true, 'extensions'=>'%contao.image.valid_extensions%', 'mandatory'=>true),
     'sql'                     => "binary(16) NULL"
-);
-
-$GLOBALS['TL_DCA']['tl_news']['fields']['fullsizeMainImage'] = array
-(
-    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['fullsize'],
-    'inputType'               => 'checkbox',
-    'eval'                    => array('tl_class'=>'w50'),
-    'sql'                     => array('type' => 'boolean', 'default' => false)
 );
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['sizeMainImage'] = array
