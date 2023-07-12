@@ -13,7 +13,7 @@
  /* Extend the tl_news palettes */
 $GLOBALS['TL_DCA']['tl_news']['palettes']['default'] = str_replace(';{image_legend}', ';{reader_main_image_legend},addImageMainImage;{image_legend}', $GLOBALS['TL_DCA']['tl_news']['palettes']['default']);
 
-$GLOBALS['TL_DCA']['tl_news']['palettes']['__selector__'] = array('source', 'addImageMainImage', 'addImage', 'addEnclosure', 'overwriteMeta'),
+$GLOBALS['TL_DCA']['tl_news']['palettes']['__selector__'] = array('source', 'addImageMainImage', 'addImage', 'addEnclosure', 'overwriteMeta');
 $GLOBALS['TL_DCA']['tl_news']['subpalettes']['addImageMainImage'] = 'singleSRCMainImage,fullsizeMainImage,sizeMainImage,floatingMainImage,overwriteMetaMainImage';
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['addImageMainImage'] = array
