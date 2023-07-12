@@ -1,0 +1,36 @@
+{
+    "name":"bright-cloud-studio/frasch-news-main-image",
+    "description":"Adds a Main Image field to news articles on the Frasch Contao site",
+    "homepage": "http://brightcloudstudio.com/",
+    "keywords":["frasch", "news", "main", "image"],
+    "type":"contao-module",
+    "license":"LGPL-3.0-or-later",
+    "authors":[
+        {
+            "name":"Bright Cloud Studio",
+            "homepage":"https://brightcloudstudio.com"
+        }
+    ],
+    "require":{
+        "php": "^8.0",
+        "contao/core-bundle": "^4.13"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bcs\\": [
+                "system/modules/frasch_news_main_image/library/Bcs"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "system/modules/frasch_news_main_image": "system/modules/frasch_news_main_image"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
