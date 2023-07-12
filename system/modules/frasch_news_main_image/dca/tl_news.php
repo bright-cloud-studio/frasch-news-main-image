@@ -15,10 +15,9 @@ $GLOBALS['TL_DCA']['tl_news']['palettes']['default'] = str_replace(';{teaser_leg
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['news_issue'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_news']['news_issue'],
-	'inputType'               => 'text',
-	'default'                 => '',
-	'search'                  => true,
-	'eval'                    => array('mandatory'=>false, 'tl_class'=>'w50'),
-	'sql'                     => "varchar(255) NOT NULL default ''"
+    'label'                   => &$GLOBALS['TL_LANG']['tl_news']['reader_main_image'],
+    'inputType'               => 'fileTree',
+    'exclude'                 => true,
+    'eval'                    => array('fieldType'=>'radio', 'filesOnly'=>true, 'extensions'=>'%contao.image.valid_extensions%', 'mandatory'=>true),
+    'sql'                     => "binary(16) NULL"
 );
