@@ -36,7 +36,7 @@ $GLOBALS['TL_DCA']['tl_news']['fields']['singleSRCMainImage'] = array
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['fullsizeMainImage'] = array
 (
-    'label'                   => &$GLOBALS['TL_LANG']['tl_news']['fullsizeMainImage'],
+    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['fullsize'],
     'inputType'               => 'checkbox',
     'eval'                    => array('tl_class'=>'w50'),
     'sql'                     => array('type' => 'boolean', 'default' => false)
@@ -44,7 +44,7 @@ $GLOBALS['TL_DCA']['tl_news']['fields']['fullsizeMainImage'] = array
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['sizeMainImage'] = array
 (
-    'label'                   => &$GLOBALS['TL_LANG']['MSC']['sizeMainImage'],
+    'label'                   => &$GLOBALS['TL_LANG']['MSC']['size'],
     'inputType'               => 'imageSize',
     'reference'               => &$GLOBALS['TL_LANG']['MSC'],
     'eval'                    => array('rgxp'=>'natural', 'includeBlankOption'=>true, 'nospace'=>true, 'helpwizard'=>true, 'tl_class'=>'w50 clr'),
@@ -56,7 +56,7 @@ $GLOBALS['TL_DCA']['tl_news']['fields']['sizeMainImage'] = array
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['floatingMainImage'] = array
 (
-    'label'                   => &$GLOBALS['TL_LANG']['tl_news']['floatingMainImage'],
+    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['floating'],
     'inputType'               => 'radioTable',
     'options'                 => array('above', 'left', 'right', 'below'),
     'eval'                    => array('cols'=>4, 'tl_class'=>'w50'),
@@ -66,7 +66,7 @@ $GLOBALS['TL_DCA']['tl_news']['fields']['floatingMainImage'] = array
 
 $GLOBALS['TL_DCA']['tl_news']['fields']['overwriteMetaMainImage'] = array
 (
-    'label'                   => &$GLOBALS['TL_LANG']['tl_news']['overwriteMetaMainImage'],
+    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['overwriteMeta'],
     'inputType'               => 'checkbox',
     'eval'                    => array('submitOnChange'=>true, 'tl_class'=>'w50 clr'),
     'sql'                     => array('type' => 'boolean', 'default' => false)
