@@ -28,6 +28,7 @@ $GLOBALS['TL_DCA']['tl_news']['fields']['addImageMainImage'] = array
 $GLOBALS['TL_DCA']['tl_news']['fields']['singleSRCMainImage'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_content']['singleSRC'],
+    'exclude'                 => true,
     'inputType'               => 'fileTree',
     'eval'                    => array('fieldType'=>'radio', 'filesOnly'=>true, 'extensions'=>'%contao.image.valid_extensions%', 'mandatory'=>true),
     'sql'                     => "binary(16) NULL"
